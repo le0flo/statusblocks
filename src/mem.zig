@@ -93,6 +93,6 @@ pub fn fmtMemUsage(writer: *Writer) !void {
         _ = linux.close(fd);
 
         _ = writer.consumeAll();
-        try writer.print("{d:6} / {d} MB", .{ mem_available / 1024, mem_total / 1024 });
+        try writer.print("{d:6} / {d} MB", .{ (mem_total - mem_available) / 1024, mem_total / 1024 });
     }
 }
