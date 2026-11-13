@@ -1,0 +1,14 @@
+.{
+    .name = .statusblocks,
+    .version = "1.0.0",
+    .fingerprint = 0xb38f28146b1eeef3, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.17.1",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "COPYING",
+        "README.adoc",
+    },
+}

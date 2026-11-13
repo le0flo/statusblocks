@@ -1,0 +1,3 @@
+= Status Blocks
+
+Minimal resource status fetcher.
